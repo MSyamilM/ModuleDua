@@ -31,4 +31,8 @@ public class Bus {
         System.out.println("Penumpang sekarang = "+penumpang);
         System.out.println("penumpang seharusnya adalah ="+maxpenumpang);
     }
+    public void getAverage(int berapaKali){
+        int hasil = penumpang/berapaKali;
+        System.out.println("Rata-rata penumpang yang ditambahkan adalah: " + hasil);
+    }
 }

@@ -9,11 +9,13 @@ public class UjiBus {
         busMini.pluspenumpang(3);
         busMini.cetak();
         
-        busMini.pluspenumpang(1);
+        busMini.pluspenumpang(2);
         busMini.cetak();
         
-        busMini.pluspenumpang(1);
+        busMini.pluspenumpang(4);
         busMini.cetak();
+
+        busMini.getAverage(3);
         
           
     }
