@@ -1,15 +1,16 @@
 public class Bus {
-    private int penumpang,maxpenumpang,password;
+    private int penumpang,maxpenumpang,password,berat;
     
     // konstruktor
     public Bus(int maxpenumpang){
         this.maxpenumpang=maxpenumpang;
         penumpang = 0;
         password = 0;
+        berat = 0;
     }
     
     //method mutator 
-    public void pluspenumpang(int penumpang){
+    public void pluspenumpang(int penumpang, int berat){
         int temp;
         temp=this.penumpang+penumpang;
         if (password==90) {
@@ -18,6 +19,7 @@ public class Bus {
             }
             else {
                 this.penumpang=temp;
+                this.berat+=berat;
             }
         } else {
             System.out.println("Anda tidak punya akses!");
@@ -41,9 +43,9 @@ public class Bus {
         }
     }
     public void getAverage(int berapaKali){
-        int hasil = penumpang/berapaKali;
+        int hasil = berat/berapaKali;
         if (password==90) {
-            System.out.println("Rata-rata penumpang yang ditambahkan adalah: " + hasil);
+            System.out.println("Rata-rata berat penumpang yang ditambahkan adalah: " + hasil + " kg");
         } else {
             System.out.println("Anda tidak punya akses!");
         }
