@@ -1,17 +1,22 @@
-import java.util.Scanner;
-
 public class TestBola {
     public static void main(String[] args) {
-        try (Scanner input = new Scanner(System.in)) {
-            System.out.print("Masukkan Nilai Jari-Jari: ");
-            double JariJari = input.nextDouble();
+        // TODO code application logic here
+        Bus busMini=new Bus(10);
+        busMini.getPassword(40);
+        busMini.getPassword(90);
+        busMini.cetak();
 
-            Bola ball = new Bola();
+        busMini.pluspenumpang(3);
+        busMini.cetak();
+        
+        busMini.pluspenumpang(2);
+        busMini.cetak();
+        
+        busMini.pluspenumpang(4);
+        busMini.cetak();
 
-            ball.setJariJari(JariJari);
-            ball.showDiameter();
-            ball.showLuasPermukaan();
-            ball.showVolume();
-        }
-    }
+        busMini.getAverage(3);
+        
+          
+    }   
 }
